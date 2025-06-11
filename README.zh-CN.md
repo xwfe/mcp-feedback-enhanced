@@ -122,7 +122,27 @@ uvx mcp-feedback-enhanced@latest test
 }
 ```
 
-### 3. 设定提示工程
+### 3. Electron 界面 界面
+项目现在新增了一个使用 TypeScript 编写的 Electron 启动器。
+运行方式：
+```bash
+cd electron-app
+npm install
+npm start
+```
+
+### 4. Node 服务器（实验）
+项目新增了一个 Node.js (Express) 编写的基础服务器
+```bash
+cd node-server
+npm install
+npm run dev
+```
+这将通过 `http://localhost:8765` 提供现有界面
+
+这会启动 Python Web 服务，并在 Electron 窗口中显示界面。
+
+### 5. 设定提示工程
 为了获得最佳效果，请在 AI 助手中添加以下规则：
 
 ```
