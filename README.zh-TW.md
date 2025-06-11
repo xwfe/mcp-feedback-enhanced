@@ -122,7 +122,27 @@ uvx mcp-feedback-enhanced@latest test
 }
 ```
 
-### 3. 設定提示工程
+### 3. Electron 介面
+專案新增以 TypeScript 撰寫的 Electron 啟動器。
+啟動方法：
+```bash
+cd electron-app
+npm install
+npm start
+```
+
+### 4. Node 伺服器（實驗版）
+專案新增一個 Node.js (Express) 擷寫的基礎伺服器
+```bash
+cd node-server
+npm install
+npm run dev
+```
+可透過 `http://localhost:8765` 使用現有介面
+
+這會啟動 Python Web 服務，並在 Electron 視窗中顯示介面。
+
+### 5. 設定提示工程
 為了獲得最佳效果，請在 AI 助手中添加以下規則：
 
 ```

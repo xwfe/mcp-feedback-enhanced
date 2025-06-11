@@ -122,7 +122,28 @@ uvx mcp-feedback-enhanced@latest test
 }
 ```
 
-### 3. Prompt Engineering Setup
+### 3. Launch Electron Web UI
+The project now includes a minimal Electron launcher written in TypeScript.
+To try it out:
+```bash
+cd electron-app
+npm install
+npm start
+```
+
+### 4. Node Server (Experimental)
+A minimal Node.js server is available under `node-server` for early testing.
+```bash
+cd node-server
+npm install
+npm run dev
+```
+Visit `http://localhost:8765` in your browser.
+
+
+This will start the Python web server and open the interface inside an Electron window.
+
+### 5. Prompt Engineering Setup
 For best results, add these rules to your AI assistant:
 
 ```
